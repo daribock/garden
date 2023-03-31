@@ -1,14 +1,6 @@
 async function drawGraph(baseUrl, isHome, pathColors, graphConfig) {
-
-  let {
-    depth,
-    enableDrag,
-    enableLegend,
-    enableZoom,
-    opacityScale,
-    scale,
-    repelForce,
-    fontSize } = graphConfig;
+  let { depth, enableDrag, enableLegend, enableZoom, opacityScale, scale, repelForce, fontSize } =
+    graphConfig
 
   const container = document.getElementById("graph-container")
   const { index, links, content } = await fetchData
@@ -85,7 +77,7 @@ async function drawGraph(baseUrl, isHome, pathColors, graphConfig) {
       d.fy = null
     }
 
-    const noop = () => { }
+    const noop = () => {}
     return d3
       .drag()
       .on("start", enableDrag ? dragstarted : noop)
@@ -113,7 +105,7 @@ async function drawGraph(baseUrl, isHome, pathColors, graphConfig) {
     .append("svg")
     .attr("width", width)
     .attr("height", height)
-    .attr('viewBox', [-width / 2 / scale, -height / 2 / scale, width / scale, height / scale])
+    .attr("viewBox", [-width / 2 / scale, -height / 2 / scale, width / scale, height / scale])
 
   if (enableLegend) {
     const legend = [{ Current: "var(--g-node-active)" }, { Note: "var(--g-node)" }, ...pathColors]
@@ -176,10 +168,10 @@ async function drawGraph(baseUrl, isHome, pathColors, graphConfig) {
           broken: false,
           internal: true,
           graph: true,
-        }
+        },
       })
     })
-    .on("mouseover", function(_, d) {
+    .on("mouseover", function (_, d) {
       d3.selectAll(".node").transition().duration(100).attr("fill", "var(--g-node-inactive)")
 
       const neighbours = parseIdsFromLinks([
@@ -207,12 +199,12 @@ async function drawGraph(baseUrl, isHome, pathColors, graphConfig) {
         .select("text")
         .transition()
         .duration(200)
-        .attr('opacityOld', d3.select(this.parentNode).select('text').style("opacity"))
-        .style('opacity', 1)
-        .style('font-size', bigFont + 'em')
-        .attr('dy', d => nodeRadius(d) + 20 + 'px') // radius is in px
+        .attr("opacityOld", d3.select(this.parentNode).select("text").style("opacity"))
+        .style("opacity", 1)
+        .style("font-size", bigFont + "em")
+        .attr("dy", (d) => nodeRadius(d) + 20 + "px") // radius is in px
     })
-    .on("mouseleave", function(_, d) {
+    .on("mouseleave", function (_, d) {
       d3.selectAll(".node").transition().duration(200).attr("fill", color)
 
       const currentId = d.id
@@ -226,9 +218,9 @@ async function drawGraph(baseUrl, isHome, pathColors, graphConfig) {
         .select("text")
         .transition()
         .duration(200)
-        .style('opacity', d3.select(this.parentNode).select('text').attr("opacityOld"))
-        .style('font-size', fontSize + 'em')
-        .attr('dy', d => nodeRadius(d) + 8 + 'px') // radius is in px
+        .style("opacity", d3.select(this.parentNode).select("text").attr("opacityOld"))
+        .style("font-size", fontSize + "em")
+        .attr("dy", (d) => nodeRadius(d) + 8 + "px") // radius is in px
     })
     .call(drag(simulation))
 
@@ -238,10 +230,13 @@ async function drawGraph(baseUrl, isHome, pathColors, graphConfig) {
     .attr("dx", 0)
     .attr("dy", (d) => nodeRadius(d) + 8 + "px")
     .attr("text-anchor", "middle")
-    .text((d) => content[d.id]?.title || (d.id.charAt(1).toUpperCase() + d.id.slice(2)).replace("-", " "))
-    .style('opacity', (opacityScale - 1) / 3.75)
+    .text(
+      (d) =>
+        content[d.id]?.title || (d.id.charAt(1).toUpperCase() + d.id.slice(2)).replace("-", " "),
+    )
+    .style("opacity", (opacityScale - 1) / 3.75)
     .style("pointer-events", "none")
-    .style('font-size', fontSize + 'em')
+    .style("font-size", fontSize + "em")
     .raise()
     .call(drag(simulation))
 
@@ -259,7 +254,7 @@ async function drawGraph(baseUrl, isHome, pathColors, graphConfig) {
         .on("zoom", ({ transform }) => {
           link.attr("transform", transform)
           node.attr("transform", transform)
-          const scale = transform.k * opacityScale;
+          const scale = transform.k * opacityScale
           const scaledOpacity = Math.max((scale - 1) / 3.75, 0)
           labels.attr("transform", transform).style("opacity", scaledOpacity)
         }),

@@ -6,3 +6,15 @@ content/.obsidian
 assets/indices/linkIndex.json
 assets/indices/contentIndex.json
 linkmap
+
+# Node
+
+node_modules/
+
+# Notes
+
+content/notes/garden
+
+# Logs
+*.log
+
