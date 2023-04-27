@@ -2,7 +2,6 @@
 public
 resources
 .idea
-content/.obsidian
 assets/indices/linkIndex.json
 assets/indices/contentIndex.json
 linkmap
@@ -13,7 +12,7 @@ node_modules/
 
 # Notes
 
-content/notes/garden
+content/garden
 
 # Logs
 *.log
