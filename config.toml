@@ -5,12 +5,29 @@ disablePathToLower = true
 ignoreFiles = [
     "/content/private/*",
     "/content/garden/The-Bible-HOF/*",
-    "/content/garden/.trash/*
-    "/content/garden/.obsidian/*
+    "/content/garden/10*",
+    "/content/garden/.*",
+    "/content/garden/30*",
+    "/content/garden/40*",
+    "/content/garden/50*",
+    "/content/garden/60*/600*",
+    "/content/garden/Betania*",
+    "/content/garden/Letters",
+    "/content/garden/Rhema",
+    "/content/garden/The-Bible-HOF",
+    "/content/garden/work",
+    "/content/garden/Filme.md",
+    "/content/garden/Kanban*.md",
+    "/content/garden/Tags*.md",
+    "/content/garden/TODOS.md",
+    "/content/garden/When*.md",
+    "/content/garden/Jugend.md",
 ]
 summaryLength = 20
 paginate = 10
 enableGitInfo = true
+theme = "quartz-theme"
+sectionPagesMenu = 'main'
 
 [markup]
     [markup.tableOfContents]
