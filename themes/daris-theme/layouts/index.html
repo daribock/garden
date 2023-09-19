@@ -1,17 +1,15 @@
-<!DOCTYPE html>
-<html lang="{{ .Lang }}">
-  {{ partial "head.html" . }}
-
-  <body>
-    {{partial "search.html" .}}
-    <div class="singlePage">
-      <!-- Begin actual content -->
-      {{partial "header.html" .}}
-      <article>
-        {{partial "toc.html" .}} {{partial "textprocessing.html" . }} {{if
-        $.Site.Data.config.enableRecentNotes}} {{partial "recent.html" . }} {{end}}
-      </article>
-      {{partial "footerIndex.html" .}}
+{{ define "main" }}
+<main aria-role="main">
+    <header class="homepage-header">
+        <h1>{{ .Title }}</h1>
+        {{ with .Params.subtitle }}
+        <span class="subtitle">{{ . }}</span>
+        {{ end }}
+    </header>
+    <div class="homepage-content">{{ .Content }}</div>
+    <div>
+        {{ range first 10 .Site.RegularPages }} {{ .Render "summary" }} {{ end
+        }}
     </div>
-  </body>
-</html>
+</main>
+{{ end }}
