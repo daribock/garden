@@ -1,16 +1,15 @@
 <header>
-    <nav>
-        <h1>Darius's Garden 🌳</h1>
-        <ul>
-            <li><a href="/">Home</a></li>
-            {{- range site.Menus.main }}
-            <li>
-                <a href="{{ .URL }}">
-                    {{ .Name }} {{- with .Page }} {{- with .Params.version -}}
-                    ({{ . }}) {{- end }} {{- end }}
-                </a>
-            </li>
-            {{- end }}
-        </ul>
-    </nav>
+  <nav>
+    <h1>Darius's Garden 🌳</h1>
+    <ul>
+      <li><a href="/">Home</a></li>
+      {{- range site.Menus.main }}
+      <li>
+        <a href="{{ .URL }}">
+          {{ .Name }} {{- with .Page }} {{- with .Params.version -}} ({{ . }}) {{- end }} {{- end }}
+        </a>
+      </li>
+      {{- end }}
+    </ul>
+  </nav>
 </header>

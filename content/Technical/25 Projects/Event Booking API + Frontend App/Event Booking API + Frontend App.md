@@ -1,7 +1,7 @@
 ---
 draft: false
-tags: 
-- seed
+tags:
+  - seed
 ---
 
 # Event Booking API + Frontend App

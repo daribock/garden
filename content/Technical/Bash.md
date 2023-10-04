@@ -1,12 +1,11 @@
 ---
 title: "Bash"
 draft: false
-tags: 
-- seed
+tags:
+  - seed
 ---
 
 created at: [[2022-08-15]]
-
 
 ## Tutorials
 

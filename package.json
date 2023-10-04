@@ -1,0 +1,13 @@
+{
+  "name": "garden",
+  "version": "1.0.0",
+  "description": "This is my garden where I plant my thoughts and other stuff.",
+  "scripts": {
+    "lint:fix": "prettier --config ./.prettierrc --write ."
+  },
+  "author": "Darius Kletter",
+  "license": "ISC",
+  "devDependencies": {
+    "prettier": "^3.0.3"
+  }
+}

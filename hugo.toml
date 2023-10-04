@@ -1,5 +1,9 @@
-baseURL = 'http://example.org/'
+baseURL = 'darikletter.de'
 languageCode = 'en-us'
-title = 'My New Hugo Site'
+title = "Darius's garden"
 theme = 'daris-theme'
 sectionPagesMenu = 'main'
+
+[params]
+  author = 'Darius Kletter'
+  description = "My garden planted with thoughts and knowledge."

@@ -1,7 +1,7 @@
 ---
 draft: false
-tags: 
-- seed
+tags:
+  - seed
 ---
 
 # PWA - Progressive Web Apps

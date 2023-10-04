@@ -2,7 +2,7 @@
 title: "How to connect google business and instagram"
 date: "2023-04-17"
 tags:
-- seed
+  - seed
 ---
 
 created at: [[2023-04-17]]

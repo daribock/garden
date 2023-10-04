@@ -1,7 +1,7 @@
 ---
 draft: false
-tags: 
-- seed
+tags:
+  - seed
 ---
 
 # Replace all old Bible links with new ones

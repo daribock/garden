@@ -1,13 +1,10 @@
 ---
+title: "Javascript"
 draft: false
-tags: 
-- seed
+date: "[[2022-08-10]]"
+tags:
+  - seed
 ---
-created at: [[2022-08-10]]
-
----
-
-# Javascript
 
 ## Courses
 
