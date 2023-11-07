@@ -1,34 +1,26 @@
 @import "./mvp.css";
 
-/* Breadcrumb */
+/* Broken internal-link link */
 
-nav.breadcrumb {
-  display: unset;
-  font-weight: normal;
-  margin-bottom: 0rem;
+.broken {
+  opacity: 0.5;
+  text-decoration: none;
+  pointer-events: none;
+  background-color: transparent;
 }
 
-ol.breadcrumb {
-  margin-top: 1em;
-  margin-bottom: 1em;
-  padding: 0px;
+/* Style the list */
+ul.breadcrumb {
   list-style: none;
+  padding: 0;
 }
 
-.breadcrumb-item {
+/* Display list items side by side */
+ul.breadcrumb li {
   display: inline;
 }
 
-.breadcrumb-item + li:before {
+/* Add a slash symbol (/) before/behind each list item */
+ul.breadcrumb li + li:before {
   content: "/\00a0";
-}
-
-.badge {
-  background-color: var(--color-secondary);
-  border-radius: var(--border-radius);
-  color: var(--color-bg);
-  font-weight: bold;
-  margin: 0.2rem;
-  padding: 0.2rem 0.3rem;
-  position: relative;
 }

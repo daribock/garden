@@ -3,6 +3,7 @@
 :root {
   --active-brightness: 0.85;
   --border-radius: 5px;
+  --box-shadow: 5px 5px 10px;
   --box-shadow: 2px 2px 10px;
   --color-accent: #118bee15;
   --color-bg: #fff;
@@ -66,6 +67,7 @@ body {
   margin: 0;
   overflow-x: hidden;
   padding: 0;
+  height: 100vh;
 }
 
 footer,
@@ -73,7 +75,7 @@ header,
 main {
   margin: 0 auto;
   max-width: var(--width-content);
-  padding: 3rem 1rem;
+  padding: 1.5rem 1rem;
 }
 
 hr {
@@ -87,7 +89,7 @@ hr {
 section {
   display: flex;
   flex-wrap: wrap;
-  justify-content: var(--justify-important);
+  justify-content: var(--justify-normal);
 }
 
 section img,
@@ -103,7 +105,7 @@ section aside {
   border: 1px solid var(--color-bg-secondary);
   border-radius: var(--border-radius);
   box-shadow: var(--box-shadow) var(--color-shadow);
-  margin: 1rem;
+  margin: 1rem 1rem 1rem 0;
   padding: 1.25rem;
   width: var(--width-card);
 }
@@ -150,7 +152,6 @@ nav {
   display: flex;
   font-weight: bold;
   justify-content: space-between;
-  margin-bottom: 7rem;
 }
 
 nav ul {
@@ -280,15 +281,15 @@ a {
   color: var(--color-link);
   display: inline-block;
   font-weight: bold;
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 a:active {
-  filter: brightness(var(--active-brightness));
+  text-decoration: underline;
 }
 
 a:hover {
-  filter: brightness(var(--hover-brightness));
+  text-decoration: underline;
 }
 
 a b,
@@ -533,4 +534,40 @@ blockquote footer {
 *::-webkit-scrollbar-thumb {
   background-color: rgb(202, 202, 232);
   border-radius: 10px;
+}
+
+/* Flex */
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: var(--justify-normal);
+  gap: 1rem;
+}
+
+.justify-important {
+  justify-content: var(--justify-important);
+}
+
+/* Tags */
+.tag {
+  background-color: var(--color-bg-secondary);
+  padding: 0 8px;
+  border: 1px solid var(--color-bg-secondary);
+  border-radius: 8px;
+}
+
+a.tag:hover {
+  box-shadow: var(--box-shadow) var(--color-bg-secondary);
+  text-decoration: none;
+}
+
+.tag::before {
+  content: "#";
+}
+
+.profile-picture {
+  width: 200px;
+  height: 200px;
+  border: 1px solid var(--color-bg-secondary);
+  border-radius: 50%;
 }

@@ -1,8 +1,15 @@
 {{ define "main" }}
-<article id="main">
-  <header>
-    <h1 id="title">{{ .Title }}</h1>
-  </header>
-  <div id="content">{{ .Content }}</div>
+<article>
+  <h1 id="title">{{ .Title }}</h1>
+  <small>{{ partial "date-fmt.html" .}}</small>
+  {{if .GetTerms "tags"}}
+  <div class="flex">
+    {{ range (.GetTerms "tags") }}
+    <a class="tag" href="{{ .Permalink }}"> {{ .LinkTitle }} </a>
+    {{end}}
+  </div>
+  {{end}}
+
+  <div id="content">{{partial "text-processing.html" . }}</div>
 </article>
 {{ end }}

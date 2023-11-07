@@ -8,8 +8,7 @@ draft: false
 
 - 👨🏽‍💻 Currently I am working as an Associate Software Engineer at
   [MediaMarktSaturn](https://github.com/MediaMarktSaturn)
-- 🎨 I love designing - for example websites but most of the time Instagram
-  posts - and solving problems
+- 🎨 I love designing and solving problems
 - ⛪️ In my free time I love to read the [Bible](https://www.bible.com/) and
   work as a volunteer in my local church:
   [Betania Ingolstadt](https://www.instagram.com/betaniaingolstadt)

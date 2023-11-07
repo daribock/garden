@@ -1,5 +1,5 @@
 baseURL = 'darikletter.de'
-languageCode = 'en-us'
+languageCode = 'de-de'
 title = "Darius's garden"
 theme = 'daris-theme'
 sectionPagesMenu = 'main'
@@ -7,3 +7,4 @@ sectionPagesMenu = 'main'
 [params]
   author = 'Darius Kletter'
   description = "My garden planted with thoughts and knowledge."
+  DateForm = "Jan 2, 2006"

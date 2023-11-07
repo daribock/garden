@@ -1,20 +1,10 @@
-{{/* Breadcrumb navigation used in header. */}}
-
-<nav class="breadcrumb">
-  <ol class="breadcrumb">
-    <li class="breadcrumb-item">
-      <a class="nav-link p-0" style="display: inline" href="/">Home</a>
-    </li>
-    {{ template "breadcrumb" dict "currentPage" .Page "id" .File.UniqueID }}
-  </ol>
-</nav>
-
-<!-- breadcrumb-template -->
-{{ define "breadcrumb"}} {{ if .currentPage.Parent }} {{ if ne .currentPage.Parent .IsHome }} {{
-template "breadcrumb" dict "currentPage" .currentPage.Parent }}
-<li class="breadcrumb-item {{ if eq .id .currentPage.File.UniqueID }} active {{ end }}">
-  <a class="nav-link p-0" style="display: inline" href="{{ .currentPage.RelPermalink }}"
-    >{{ .Title }}</a
-  >
-</li>
-{{ end }} {{ end }}{{ end }}
+{{if not .IsHome}}
+<ul class="breadcrumb">
+  {{- range .Ancestors.Reverse }}
+  <li>
+    <a href="{{ .RelPermalink }}"> {{if .IsHome}} Home {{else}} {{ .Title }} {{end}} </a>
+  </li>
+  {{ end }}
+  <li>{{ .Title }}</li>
+</ul>
+{{ end }}

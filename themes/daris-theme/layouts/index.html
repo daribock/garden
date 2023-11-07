@@ -1,10 +1,8 @@
-{{ define "main" }}
-<main aria-role="main">
-  <header class="homepage-header">
-    <h1>{{ .Title }}</h1>
-    <p>My name is <b> Darius </b> and I am a follower of <mark> Jesus Christ </mark> .</p>
-  </header>
-  <div class="homepage-content">{{ .Content }}</div>
-  <div>{{ range first 10 .Site.RegularPages }} {{ .Render "summary" }} {{ end }}</div>
-</main>
+{{ define "main" }} {{ $image := resources.Get "images/profile-picture.webp" }}
+<header class="homepage-header">
+  <img src="{{ $image.RelPermalink }}" alt="profile-picture" class="profile-picture" />
+  <h1>{{ .Title }}</h1>
+  <p>My name is <b> Darius </b> and I am a follower of <mark> Jesus Christ </mark> .</p>
+</header>
+<div id="homepage-content">{{partial "text-processing.html" . }}</div>
 {{ end }}
