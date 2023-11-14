@@ -2,8 +2,8 @@
 title: "MongoDB 🍃"
 date: "2023-09-26"
 draft: false
-tags: 
-- seed
+tags:
+  - seed
 ---
 
 ## Warum MongoDB?
@@ -11,9 +11,9 @@ tags:
 - alles zusammen Speichern was zusammen gehört
 - ! bei großen Arrays (zum Beispiel Coupons) splitten
 - ist Dokumenten basiert
-	- einfacher
-	- performanter weil kein Join
-	- Developer freundlich
+  - einfacher
+  - performanter weil kein Join
+  - Developer freundlich
 
 ## Sharding architecture
 
@@ -27,7 +27,7 @@ tags:
 - nodes in different regions
 - read-only nodes
 - Analytics nodes for Analytics Team
-- ! MongoDB mit Terraform aufsetzen 
+- ! MongoDB mit Terraform aufsetzen
 - nothing is set in Stone
 
 ## Atlas search and vector search
@@ -78,11 +78,4 @@ Common search Features
 
 ## Learnings
 
-learn.mongodb.com/dashboard
-Learnathon
-
-
-
-
-
-
+learn.mongodb.com/dashboard Learnathon

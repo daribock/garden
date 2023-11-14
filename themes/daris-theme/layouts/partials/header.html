@@ -6,7 +6,8 @@
       {{- range site.Menus.main }}
       <li>
         <a href="{{ .URL }}">
-          {{ .Name }} {{- with .Page }} {{- with .Params.version -}} ({{ . }}) {{- end }} {{- end }}
+          {{ .Name }} {{- with .Page }} {{- with .Params.version -}} ({{ . }})
+          {{- end }} {{- end }}
         </a>
       </li>
       {{- end }}

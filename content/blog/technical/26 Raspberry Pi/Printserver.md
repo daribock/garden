@@ -6,7 +6,8 @@ tags:
   - seed
 ---
 
-Reference: https://howchoo.com/pi/wireless-printer-raspberry-pi#install-raspberry-pi-os
+Reference:
+https://howchoo.com/pi/wireless-printer-raspberry-pi#install-raspberry-pi-os
 
 ## 1. Setup pi
 
@@ -32,8 +33,10 @@ sudo /etc/init.d/cups start
 
 ## 3. Set static IP-adress
 
-Because we don't want the Ip-Adress of our printserver (raspberry pi) to change every now and then. We will set a static IP-Adress for the printserver
+Because we don't want the Ip-Adress of our printserver (raspberry pi) to change
+every now and then. We will set a static IP-Adress for the printserver
 
-Follow this guide: https://howchoo.com/pi/configure-static-ip-address-raspberry-pi
+Follow this guide:
+https://howchoo.com/pi/configure-static-ip-address-raspberry-pi
 
-## 4.
+## 4. TODO

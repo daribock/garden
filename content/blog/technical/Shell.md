@@ -8,7 +8,8 @@ tags:
 
 ## How to change shell
 
-Reference: https://www.howtogeek.com/444596/how-to-change-the-default-shell-to-bash-in-macos-catalina/
+Reference:
+https://www.howtogeek.com/444596/how-to-change-the-default-shell-to-bash-in-macos-catalina/
 
 List all available shells:
 

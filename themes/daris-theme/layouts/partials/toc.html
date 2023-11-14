@@ -1,0 +1,9 @@
+{{ $hasHeaders := gt (len (findRE "<h\\d.*?>(.|\n)*?</h\\d>" .Content)) 0 }}
+{{ if $hasHeaders }}
+<aside class="small-space">
+    <details>
+        <summary>Table of content</summary>
+        {{ .TableOfContents }}
+    </details>
+</aside>
+{{end}}

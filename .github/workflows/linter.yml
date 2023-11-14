@@ -23,9 +23,11 @@ jobs:
           # list of changed files within `super-linter`
           fetch-depth: 0
 
+      - name: Get linter.env
+        run: cat .github/linter.env >> "$GITHUB_ENV"
+
       - name: Lint Code Base
         uses: super-linter/super-linter@v5
         env:
-          VALIDATE_ALL_CODEBASE: false
           DEFAULT_BRANCH: master
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

@@ -24,3 +24,40 @@ ul.breadcrumb li {
 ul.breadcrumb li + li:before {
   content: "/\00a0";
 }
+
+/* Flex */
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: var(--justify-normal);
+  gap: 1rem;
+}
+
+.justify-important {
+  justify-content: var(--justify-important);
+}
+
+/* Tags */
+.tag::before {
+  content: "#";
+}
+
+.profile-picture {
+  width: 200px;
+  height: 200px;
+  border: 1px solid var(--color-bg-secondary);
+  border-radius: 50%;
+}
+
+.small-space {
+  margin: 0.5rem 0;
+}
+
+/* Code style */
+.lntd {
+  text-align: var(--justify-normal);
+}
+
+.favicon-button-gird button {
+  background-color: var(--color-bg);
+}

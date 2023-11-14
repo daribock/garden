@@ -12,7 +12,8 @@ Git is a version control system used in software development.
 
 ### `git add`
 
-source: https://stackoverflow.com/questions/572549/difference-between-git-add-a-and-git-add
+source:
+https://stackoverflow.com/questions/572549/difference-between-git-add-a-and-git-add
 
 #### Git Version 1.x
 
@@ -31,14 +32,15 @@ source: https://stackoverflow.com/questions/572549/difference-between-git-add-a-
 | `git add - u`               | ❌        | ✅             | ✅            | Stage modified and deleted files only               |
 | git add -- ignore-removal . | ✅        | ✅             | ❌            | Stage modified and deleted files only               |
 
-#### Long-form flags:
+#### Long-form flags
 
 - `git add -A` is equivalent to `git add --all`
 - `git add -u` is equivalent to `git add --update`
 
 ## Config
 
-In my [dotfiles](https://github.com/daribock/dotfiles) repo you can see the config I am using for dev.
+In my [dotfiles](https://github.com/daribock/dotfiles) repo you can see the
+config I am using for dev.
 
 ### Tools
 

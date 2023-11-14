@@ -18,7 +18,9 @@ https://www.raspberrypi.com/software/
 
 #### WLAN
 
-For the Wlan configuration to automatically take place you need to add a file called `wpa_supplicant.conf` to the root of the `boot` folder and add to it following lines:
+For the Wlan configuration to automatically take place you need to add a file
+called `wpa_supplicant.conf` to the root of the `boot` folder and add to it
+following lines:
 
 ```Vim
 country=DE
@@ -32,7 +34,8 @@ network={
 
 #### SSH
 
-To connect to the pi by SSH you have to an empty file called `SSH` to root of the `boot` folder
+To connect to the pi by SSH you have to an empty file called `SSH` to root of
+the `boot` folder
 
 https://stackoverflow.com/questions/71804429/raspberry-pi-ssh-access-denied
 

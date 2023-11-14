@@ -6,7 +6,11 @@ tags:
   - seed
 ---
 
-[Ruby](https://www.ruby-lang.org/en/about/) is an open-source programming language with a strong developer focus. Created in 1996 by Yukihiro Matsumoto, Ruby became really popular in the late 2000s with the introduction of the [Ruby on Rails](https://rubyonrails.org/) web framework. While Ruby is used quite frequently for web development, it’s also popular as a scripting language.
+[Ruby](https://www.ruby-lang.org/en/about/) is an open-source programming
+language with a strong developer focus. Created in 1996 by Yukihiro Matsumoto,
+Ruby became really popular in the late 2000s with the introduction of
+the [Ruby on Rails](https://rubyonrails.org/) web framework. While Ruby is used
+quite frequently for web development, it’s also popular as a scripting language.
 
 ## Install
 

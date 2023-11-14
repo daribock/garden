@@ -6,10 +6,12 @@ tags:
   - seed
 ---
 
-Trying to replace all old bible links I created (e.g.: [[1. Mose 1,1) with the new technique: [[Gen 1#1
+Trying to replace all old bible links I created (e.g.: [[1. Mose 1,1) with the
+new technique: [[Gen 1#1
 
-This could help:
-[- [How to Replace a String in a File in Bash](https://linuxhint.com/replace_string_in_file_bash/)](<- [How to Replace a String in a File in Bash](https://linuxhint.com/replace_string_in_file_bash/)
+This could help: [-
+[How to Replace a String in a File in Bash](https://linuxhint.com/replace_string_in_file_bash/)](<-
+[How to Replace a String in a File in Bash](https://linuxhint.com/replace_string_in_file_bash/)
 
 - [Practical Bash](https://www.youtube.com/watch?v=nyoZ8VeMEq0&list=PLShDm2AZYnK1SdG3dufPdCqk08sOahUBP&index=10)
 - https://www.youtube.com/watch?v=TFq5YxN7pE0

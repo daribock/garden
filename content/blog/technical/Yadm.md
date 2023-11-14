@@ -6,7 +6,8 @@ tags:
   - seed
 ---
 
-Yadm is a tool I use to manage my dotfiles and backup my gpg and ssh keys. Great tool!
+Yadm is a tool I use to manage my dotfiles and backup my gpg and ssh keys. Great
+tool!
 
 ## Backup GPG keys
 

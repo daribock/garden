@@ -6,7 +6,8 @@ tags:
   - seed
 ---
 
-Reference: [Build a Project with GraphQL, Node, MongoDB and React.js](https://www.youtube.com/watch?v=7giZGFDGnkc&list=PL55RiY5tL51rG1x02Yyj93iypUuHYXcB_)
+Reference:
+[Build a Project with GraphQL, Node, MongoDB and React.js](https://www.youtube.com/watch?v=7giZGFDGnkc&list=PL55RiY5tL51rG1x02Yyj93iypUuHYXcB_)
 
 <div class="iframe-container">
 <iframe width="560" height="315" src="https://www.youtube.com/embed/7giZGFDGnkc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -14,8 +15,7 @@ Reference: [Build a Project with GraphQL, Node, MongoDB and React.js](https://ww
 
 Language:
 
-- [[Javascript]]
-  Tech stack:
+- [[Javascript]] Tech stack:
 - [[GraphQL]]
 - [[Node]]
 - [[MongoDB]]
@@ -36,7 +36,8 @@ Language:
 ### How does GraphQL work?
 
 - You always send a POST request -> One singel Endpoint
-- POST Request contains Query Expression (to define the Data that should be returned)
+- POST Request contains Query Expression (to define the Data that should be
+  returned)
 
 ### A GraphQL Query
 

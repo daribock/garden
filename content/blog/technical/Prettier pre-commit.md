@@ -11,11 +11,11 @@ Run prettier out of the `./ui/node_modules/bin` folder for proco ui.
 ```bash
 #!/bin/sh
 
-  
+
 
 exit 0
 
-  
+
 
 # Define colors for log messages
 
@@ -27,7 +27,7 @@ YELLOWBOLD='\033[1;33m'
 
 BLUEBOLD='\033[1;34m'
 
-  
+
 
 # Log message prefixes for different log levels
 
@@ -37,7 +37,7 @@ SUCCESS="$GREENBOLD[SUCCESS]$COLOR_OFF"
 
 WARNING="$YELLOWBOLD[WARNING]$COLOR_OFF"
 
-  
+
 
 # Function to log an informational message
 
@@ -47,7 +47,7 @@ echo "$INFO $1"
 
 }
 
-  
+
 
 # Function to log a success message
 
@@ -57,7 +57,7 @@ echo "$SUCCESS $1"
 
 }
 
-  
+
 
 # Function to log a warning message
 
@@ -67,7 +67,7 @@ echo "$WARNING $1"
 
 }
 
-  
+
 
 # Function to log an exit message
 
@@ -77,17 +77,17 @@ log_info "Exiting pre-commit"
 
 }
 
-  
+
 
 log_info "Run pre-commit"
 
-  
+
 
 # Capture the list of staged files using git diff
 
 FILES=$(git diff --cached --name-only --diff-filter=ACMR | sed 's| |\\ |g')
 
-  
+
 
 # Check if FILES is empty (no files staged for commit)
 
@@ -101,17 +101,17 @@ exit 0
 
 fi
 
-  
+
 
 log_info "Run pre-commit"
 
-  
+
 
 # Capture the list of staged files using git diff
 
 FILES=$(git diff --cached --name-only --diff-filter=ACMR | sed 's| |\\ |g')
 
-  
+
 
 # Check if FILES is empty (no files staged for commit)
 
@@ -125,7 +125,7 @@ exit 0
 
 fi
 
-  
+
 
 # Check if Prettier is installed in the local ./ui/node_modules folder
 
@@ -139,7 +139,7 @@ exit 0
 
 fi
 
-  
+
 
 # Run Prettier on all modified files at once and capture the list of modified files
 
@@ -149,7 +149,7 @@ echo "$FILES" | xargs ./ui/node_modules/.bin/prettier --ignore-unknown --list-di
 
 )
 
-  
+
 
 # Check if there are any modified files
 
@@ -165,7 +165,7 @@ if echo "$MODIFIED_FILES" | xargs ./ui/node_modules/.bin/prettier --ignore-unkno
 
 log_success "Prettier run successfully"
 
-  
+
 
 # Git add all modified files in a single batch
 
@@ -195,7 +195,7 @@ fi
 
 fi
 
-  
+
 
 log_success "Pre-commit done 🎉"
 

@@ -6,6 +6,7 @@ tags:
   - seed
 ---
 
-**What is Cypress?** Short: A testing Framework. But man this can do so much more.
+**What is Cypress?** Short: A testing Framework. But man this can do so much
+more.
 
 - [[Cypress at work]]

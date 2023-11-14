@@ -6,7 +6,8 @@ tags:
   - seed
 ---
 
-[Quartz](https://github.com/jackyzha0/quartz) is a FREE! hosting alternative for Obsidian publish.
+[Quartz](https://github.com/jackyzha0/quartz) is a FREE! hosting alternative for
+Obsidian publish.
 
 ## Tutorial
 

@@ -1,8 +1,15 @@
-{{ define "main" }} {{ $image := resources.Get "images/profile-picture.webp" }}
+{{ define "main" }}
 <header class="homepage-header">
-  <img src="{{ $image.RelPermalink }}" alt="profile-picture" class="profile-picture" />
+  <img
+    src="/images/profile-picture.webp"
+    alt="profile-picture"
+    class="profile-picture"
+  />
   <h1>{{ .Title }}</h1>
-  <p>My name is <b> Darius </b> and I am a follower of <mark> Jesus Christ </mark> .</p>
+  <p>
+    My name is <b> Darius </b> and I am a follower of
+    <mark> Jesus Christ </mark> .
+  </p>
 </header>
 <div id="homepage-content">{{partial "text-processing.html" . }}</div>
 {{ end }}
