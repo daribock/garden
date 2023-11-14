@@ -1,4 +1,4 @@
-# Darius'S Garden 🌳
+# Darius's Garden 🌳
 
 This is my garden where I plant my thoughts and other stuff.
 
