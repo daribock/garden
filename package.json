@@ -1,15 +1,19 @@
 {
   "name": "garden",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "This is my garden where I plant my thoughts and other stuff.",
   "scripts": {
-    "lint:fix": "prettier --config ./.prettierrc --write ."
+    "format": "prettier --config ./.prettierrc --write .",
+    "prepare": "husky install"
   },
-  "keywords": [],
-  "author": "",
+  "author": "Darius Kletter",
   "license": "ISC",
   "devDependencies": {
-    "prettier": "^2.8.7"
+    "husky": "^8.0.3",
+    "lint-staged": "^15.1.0",
+    "prettier": "^3.0.3"
+  },
+  "lint-staged": {
+    "**/*": "prettier --write --ignore-unknown"
   }
 }

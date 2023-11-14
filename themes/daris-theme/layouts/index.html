@@ -1,17 +1,15 @@
-<!DOCTYPE html>
-<html lang="{{ .Lang }}">
-  {{ partial "head.html" . }}
-
-  <body>
-    {{partial "search.html" .}}
-    <div class="singlePage">
-      <!-- Begin actual content -->
-      {{partial "header.html" .}}
-      <article>
-        {{partial "toc.html" .}} {{partial "textprocessing.html" . }} {{if
-        $.Site.Data.config.enableRecentNotes}} {{partial "recent.html" . }} {{end}}
-      </article>
-      {{partial "footerIndex.html" .}}
-    </div>
-  </body>
-</html>
+{{ define "main" }}
+<header class="homepage-header">
+  <img
+    src="/images/profile-picture.webp"
+    alt="profile-picture"
+    class="profile-picture"
+  />
+  <h1>{{ .Title }}</h1>
+  <p>
+    My name is <b> Darius </b> and I am a follower of
+    <mark> Jesus Christ </mark> .
+  </p>
+</header>
+<div id="homepage-content">{{partial "text-processing.html" . }}</div>
+{{ end }}

@@ -1,19 +1,30 @@
-# Quartz
+# Darius'S Garden 🌳
 
-Host your second brain and [digital garden](https://jzhao.xyz/posts/networked-thought) for free. Quartz features
+This is my garden where I plant my thoughts and other stuff.
 
-1. Extremely fast natural-language search
-2. Customizable and hackable design based on Hugo
-3. Automatically generated backlinks, link previews, and local graph
-4. Built-in CJK + Latex Support and Admonition-style callouts
-5. Support for both Markdown Links and Wikilinks
+## Tech stack
 
-Check out some of the [amazing gardens that community members](https://quartz.jzhao.xyz/notes/showcase/) have published with Quartz!
+I used following technologies to build my garden
 
-> “[One] who works with the door open gets all kinds of interruptions, but [they] also occasionally gets clues as to what the world is and what might be important.” — Richard Hamming
+- [Hugo - Static Site Generator](https://gohugo.io/)
+- [MVP.css](https://andybrewer.github.io/mvp/)
 
-🔗 Get Started: https://quartz.jzhao.xyz/
+## Local Development
 
-![Quartz Example Screenshot](./screenshot.png)_Quartz Example Screenshot_
+This is more likely a documentation for myself. But of course I also want to
+share how and what I did.
 
-[Join the Discord Community](https://discord.gg/cRFFHYye7t)
+### Prerequisites
+
+You will need the following technologies to develop my garden
+
+- [Hugo](https://gohugo.io/)
+
+### Start hugo dev server
+
+Run the following command (in the root folder of the project) to start the dev
+server:
+
+```shell
+hugo server
+```

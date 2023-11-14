@@ -1,0 +1,29 @@
+baseURL = 'darikletter.de'
+languageCode = 'de-de'
+title = "Darius's garden"
+theme = 'daris-theme'
+sectionPagesMenu = 'main'
+summaryLength = 20
+paginate = 10
+
+[params]
+  author = 'Darius Kletter'
+  description = "My garden planted with thoughts and knowledge."
+  DateForm = "Jan 2, 2006"
+
+[markup]
+    [markup.tableOfContents]
+        endLevel = 3
+        ordered = true
+        startLevel = 2
+    [markup.highlight]
+        noClasses = false
+        anchorLineNos = false
+        codeFences = true
+        guessSyntax = true
+        hl_Lines = ""
+        lineAnchors = ""
+        lineNoStart = 1
+    [frontmatter]
+        lastmod = ["lastmod", ":git", "date", "publishDate"]
+        publishDate = ["publishDate", "date"]

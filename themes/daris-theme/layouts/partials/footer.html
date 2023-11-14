@@ -1,8 +1,13 @@
-<hr />
-
-{{if $.Site.Data.config.enableFooter}}
-<div class="page-end" id="footer">
-  <div class="backlinks-container">{{partial "backlinks.html" .}}</div>
-  <div>{{partial "graph.html" .}}</div>
-</div>
-{{end}} {{partial "contact.html" .}}
+<footer class="flex">
+  <hr />
+  <p>Change favicon icon:</p>
+  <div id="favicon-grid" class="flex favicon-button-gird">
+    <button>🌱</button>
+    <button>🌳</button>
+    <button>🍏</button>
+    <button>🥳</button>
+    <button>🤩</button>
+  </div>
+  <p>Made with ❤️ by Darius</p>
+  <script src="/js/change-favicon.js"></script>
+</footer>
