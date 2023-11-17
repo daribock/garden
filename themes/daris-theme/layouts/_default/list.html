@@ -1,7 +1,7 @@
 {{ define "main" }}
 <article>
   <h1>{{ .Title }}</h1>
-  {{ .Content }}
+  {{partial "text-processing.html" . }}
 </article>
 <section>
   <!-- Ranges through content/posts/*.md -->
