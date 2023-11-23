@@ -1,0 +1,31 @@
+name: release
+on:
+  pull_request:
+    types:
+      - closed
+    branches:
+      - master
+jobs:
+  release:
+    name: Release
+    if: github.event.pull_request.merged == true
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Release Notes
+        run: |
+          set -e
+          # read application version from pom.xml
+          VERSION=$( node -p "require('./package.json').version")
+          echo "VERSION=${VERSION}" >> $GITHUB_ENV
+
+      - name: Create Release
+        uses: actions/create-release@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          tag_name: ${{ env.VERSION }}
+          release_name: Version ${{ env.VERSION }}
+          body: ${{ github.event.pull_request.body }}
