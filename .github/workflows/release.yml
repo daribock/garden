@@ -1,10 +1,9 @@
-name: release
+name: Create Release
 on:
-  pull_request:
-    types:
-      - closed
-    branches:
-      - master
+  push:
+    # Sequence of patterns matched against refs/tags
+    tags:
+      - "v*" # Push events to matching v*, i.e. v1.0, v20.15.10
 jobs:
   release:
     name: Release
@@ -14,18 +13,11 @@ jobs:
       - name: Checkout Code
         uses: actions/checkout@v4
 
-      - name: Release Notes
-        run: |
-          set -e
-          # read application version from pom.xml
-          VERSION=$( node -p "require('./package.json').version")
-          echo "VERSION=${VERSION}" >> $GITHUB_ENV
-
       - name: Create Release
         uses: actions/create-release@v1
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          tag_name: ${{ env.VERSION }}
-          release_name: Version ${{ env.VERSION }}
-          body: ${{ github.event.pull_request.body }}
+          tag_name: ${{ github.ref }}
+          release_name: Release ${{ github.ref }}
+          body_path: CHANGELOG.md
