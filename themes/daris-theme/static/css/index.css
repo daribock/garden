@@ -58,6 +58,12 @@ ul.breadcrumb li + li:before {
   text-align: var(--justify-normal);
 }
 
-.favicon-button-gird button {
-  background-color: var(--color-bg);
+/* Media Queries */
+
+@media (max-width: 576px) {
+  header nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }

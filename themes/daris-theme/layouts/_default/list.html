@@ -4,14 +4,13 @@
   {{partial "text-processing.html" . }}
 </article>
 <section>
-  <!-- Ranges through content/posts/*.md -->
   {{ range .Pages }}
 
   <aside>
     <h3>{{if .Title }} {{ .Title }}{{ else }}No title {{end}}</h3>
     <small> {{ partial "date-fmt.html" .}} </small>
     <p>
-      <a href="{{ .Permalink }}">open</a>
+      <a href="{{ .Permalink }}">open ↗</a>
     </p>
   </aside>
 
