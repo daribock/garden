@@ -1,19 +1,12 @@
-{{ define "main" }}
+{{ define "main" }} {{ $scope := .Paginator.Pages.ByDate.Reverse }} {{ if
+.IsSection }} {{ $scope = .Pages.ByDate.Reverse }} {{ end }}
 <article>
   <h1>{{ .Title }}</h1>
   {{partial "text-processing.html" . }}
 </article>
 <section>
-  {{ range .Pages }}
-
-  <aside>
-    <h3>{{if .Title }} {{ .Title }}{{ else }}No title {{end}}</h3>
-    <small> {{ partial "date-fmt.html" .}} </small>
-    <p>
-      <a href="{{ .Permalink }}">open ↗</a>
-    </p>
-  </aside>
-
-  {{ end }}
+  {{partial "page-list.html" $scope}} {{ template "_internal/pagination.html" .
+  }}
 </section>
+
 {{ end }}

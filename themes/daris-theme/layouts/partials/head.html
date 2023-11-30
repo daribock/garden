@@ -14,10 +14,14 @@
   <meta name="description" content="{{ . }}" />
   {{ end }} {{ with .Site.LanguageCode }}
   <meta http-equiv="content-language" content="{{ . }}" />
-  {{ end }}
+  {{ end }} {{ template "_internal/opengraph.html" . }}
 
   <!-- stylesheet -->
-  <link rel="stylesheet" href="/css/index.css" />
+  {{/*
+  <link rel="stylesheet" href="/css/main.css" />
+  */}} {{ $style := resources.Get "scss/main.scss" | resources.ToCSS (dict
+  "outputStyle" "compressed" ) }}
+  <link rel="stylesheet" href="{{ $style.RelPermalink }}" />
 
   <!-- favicon -->
   <link

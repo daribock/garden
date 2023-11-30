@@ -1,15 +1,24 @@
 {{ define "main" }}
-<header class="homepage-header">
-  <img
-    src="/images/profile-picture.webp"
-    alt="profile-picture"
-    class="profile-picture"
-  />
-  <h1>{{ .Title }}</h1>
-  <p>
-    My name is <b> Darius </b> and I am a follower of
-    <mark> Jesus Christ </mark> .
-  </p>
+<header class="py-5 text-center">
+  <div class="text-center mb-4">
+    <img
+      src="/images/profile-picture.webp"
+      alt="profile-picture"
+      class="img-fluid profile-picture"
+    />
+  </div>
+  <h1 class="display-5 fw-bold text-body-emphasis">{{ .Title }}</h1>
+  <div class="col-lg-6 mx-auto">
+    <p class="lead">
+      My name is <b> Darius </b> and I am a follower of
+      <mark> Jesus Christ </mark>
+    </p>
+  </div>
 </header>
-<div id="homepage-content">{{partial "text-processing.html" . }}</div>
+<article class="py-5">{{partial "text-processing.html" . }}</article>
+<section class="border-top pt-5">
+  <h2>Latest posts</h2>
+  {{partial "page-list.html" (.Site.RegularPages.ByDate.Reverse | first 5) }}
+</section>
+
 {{ end }}
