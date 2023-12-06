@@ -1,6 +1,6 @@
 {
   "name": "garden",
-  "version": "1.1.0",
+  "version": "2.0.0",
   "description": "This is my garden where I plant my thoughts and other stuff.",
   "scripts": {
     "format": "prettier --config ./.prettierrc --write .",
