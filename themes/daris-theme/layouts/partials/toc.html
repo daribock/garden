@@ -1,9 +1,16 @@
 {{ $hasHeaders := gt (len (findRE "<h\\d.*?>(.|\n)*?</h\\d>" .Content)) 0 }}
-{{ if $hasHeaders }}
-<aside class="small-space">
-    <details>
-        <summary>Table of content</summary>
-        {{ .TableOfContents }}
-    </details>
-</aside>
+
+{{ if and $hasHeaders .IsPage }}
+<div class="d-grid">
+  <button class="btn btn-primary text-start py-1 px-2" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+    <i class="bi bi-list-ul"></i>
+    Table of Content
+  </button>
+</div>
+{{/*  Collapse container containing the toc  */}}
+<div class="collapse" id="collapseExample">
+  <div class="card mt-3 card-body">
+    {{ .TableOfContents }}
+  </div>
+</div>
 {{end}}

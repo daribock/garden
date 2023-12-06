@@ -1,15 +1,27 @@
 {{ define "main" }}
 <article>
-  <h1 id="title">{{ .Title }}</h1>
-  <small
-    >{{ partial "date-fmt.html" .}} | {{if .GetTerms "tags"}} {{ range
-    (.GetTerms "tags") }}
-    <a class="tag" href="{{ .Permalink }}"> {{ .LinkTitle }} </a>
-    {{end}} {{end}}
-  </small>
-
-  {{ partial "toc.html" . }}
+  <h1>{{ .Title }}</h1>
+  <div class="mb-3 d-flex flex-wrap gap-2">
+    <div>
+      <i class="bi bi-calendar"></i>
+      {{ partial "date-fmt.html" .}}
+    </div>
+    {{if .GetTerms "tags"}}
+    <div>
+      <i class="bi bi-tag"></i>
+      {{ range (.GetTerms "tags") }}
+      <a
+        class="badge text-bg-light text-decoration-none"
+        href="{{ .Permalink }}"
+      >
+        {{ .LinkTitle }}
+      </a>
+      {{end}}
+    </div>
+    {{end}}
+  </div>
 
   <div id="content">{{partial "text-processing.html" . }}</div>
 </article>
+
 {{ end }}

@@ -2,9 +2,8 @@ baseURL = 'darikletter.de'
 languageCode = 'de-de'
 title = "Darius's garden"
 theme = 'daris-theme'
-sectionPagesMenu = 'main'
-summaryLength = 20
-paginate = 10
+summaryLength = 10
+paginate = 5
 
 [params]
   author = 'Darius Kletter'

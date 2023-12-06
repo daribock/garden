@@ -1,1 +1,21 @@
-# Theme config.
+[menu]
+[[menu.main]]
+    name = 'Home'
+    pageRef = '/'
+    weight = 10
+[[menu.main]]
+    name = 'Garden'
+    pageRef = '/garden'
+    weight = 20
+[[menu.main]]
+    name = 'Blog'
+    pageRef = '/blog'
+    weight = 30
+[[menu.main]]
+    name = 'Tags'
+    pageRef = '/tags'
+    weight = 40
+[[menu.main]]
+    name = 'Categories'
+    pageRef = '/categories'
+    weight = 50

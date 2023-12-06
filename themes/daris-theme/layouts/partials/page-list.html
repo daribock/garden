@@ -1,0 +1,31 @@
+{{- range . -}}
+<div class="card card-hover mb-3">
+  <div class="card-body">
+    <h5 class="card-title fw-bold">{{- .Title -}}</h5>
+    <div class="mb-3 d-flex flex-wrap gap-2 text-body-tertiary">
+      <div>
+        <i class="bi bi-calendar"></i>
+        {{partial "date-fmt.html" .}}
+      </div>
+      {{if .GetTerms "tags"}}
+      <div>
+        <i class="bi bi-tag"></i>
+        {{ range (.GetTerms "tags") }}
+        <a
+          class="badge text-bg-light text-decoration-none"
+          href="{{ .Permalink }}"
+          >{{ .LinkTitle | title}}</a
+        >
+        {{ end }}
+      </div>
+      {{ end }}
+    </div>
+    <p class="text-body-secondary">{{ .Summary }}</p>
+  </div>
+  <a
+    class="icon-link icon-link-hover stretched-link"
+    href="{{ .Permalink }}"
+    data-src="{{ .RelPermalink }}"
+  ></a>
+</div>
+{{- end -}}
