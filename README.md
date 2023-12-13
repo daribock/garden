@@ -7,7 +7,7 @@ This is my garden where I plant my thoughts and other stuff.
 I used following technologies to build my garden
 
 - [Hugo - Static Site Generator](https://gohugo.io/)
-- [MVP.css](https://andybrewer.github.io/mvp/)
+- [Bootstrap](https://getbootstrap.com/)
 
 ## Local Development
 
