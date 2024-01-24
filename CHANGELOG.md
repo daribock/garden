@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.2.0](https://github.com/daribock/garden/compare/v2.1.0...v2.2.0) (2024-01-24)
+
+
+### Features
+
+* add verify ownership meta tag from google ([c3f120b](https://github.com/daribock/garden/commit/c3f120b0e53225ed0fe113fc85f91ae9cb14379a))
+
 ## [2.1.0](https://github.com/daribock/garden/compare/v2.0.0...v2.1.0) (2024-01-24)
 
 
