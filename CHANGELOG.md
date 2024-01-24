@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.1.0](https://github.com/daribock/garden/compare/v2.0.0...v2.1.0) (2024-01-24)
+
+
+### Features
+
+* improve performance ⚡️ ([2594d83](https://github.com/daribock/garden/commit/2594d8307c51ab945e7105df4925e0d8bd28e0d0))
+
 ## [2.0.0](https://github.com/daribock/garden/compare/v1.1.0...v2.0.0) (2023-12-06)
 
 
