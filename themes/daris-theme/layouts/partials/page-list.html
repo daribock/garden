@@ -1,11 +1,11 @@
 {{- range . -}}
 <div class="card card-hover mb-3">
   <div class="card-body">
-    <h5 class="card-title fw-bold">{{- .Title -}}</h5>
-    <div class="mb-3 d-flex flex-wrap gap-2 text-body-tertiary">
-      <div>
+    <h2 class="card-title fw-bold h5">{{- .Title -}}</h2>
+    <div class="mb-3 d-flex flex-wrap gap-2">
+      <div class="flex align-items-center">
         <i class="bi bi-calendar"></i>
-        {{partial "date-fmt.html" .}}
+        <span>{{partial "date-fmt.html" .}}</span>
       </div>
       {{if .GetTerms "tags"}}
       <div>

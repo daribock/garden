@@ -1,8 +1,9 @@
 {{ define "main" }}
+{{ $image := resources.Get "images/profile-picture.png"}}
 <header class="py-5 text-center">
   <div class="text-center mb-4">
     <img
-      src="/images/profile-picture.webp"
+      src="{{ ($image.Resize "200x").RelPermalink }}"
       alt="profile-picture"
       class="img-fluid profile-picture"
     />
