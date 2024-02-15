@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.2.1](https://github.com/daribock/garden/compare/v2.2.0...v2.2.1) (2024-02-15)
+
+
+### Bug Fixes
+
+* exclude CHANGELOG from super linter ([f24b12b](https://github.com/daribock/garden/commit/f24b12b474771f36357348bf69effb986d730cfc))
+
 ## [2.2.0](https://github.com/daribock/garden/compare/v2.1.0...v2.2.0) (2024-01-24)
 
 
