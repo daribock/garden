@@ -1,0 +1,23 @@
+<title>
+  {{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Site.Title }} &middot; {{
+  .Title }} {{ end }}
+</title>
+
+{{ with .Description -}}
+<meta name="description" content="{{ . }}" />
+{{ else -}} {{ with .Summary | plainify -}}
+<meta name="description" content="{{ . }}" />
+{{ else -}}
+<meta name="description" content="{{ .Site.Params.description }}" />
+{{ end -}} {{ end -}} {{ with .Site.Params.name }}
+<meta name="author" content="{{ . }}" />
+{{ end }} {{ if or (.Params.noindex) (eq .Kind "404") }}
+<meta name="robots" content="noindex" />
+{{ end }} {{ with .Site.LanguageCode }}
+<meta http-equiv="content-language" content="{{ . }}" />
+{{ end }}
+
+<!-- canonical tag -->
+<link rel="canonical" href="{{ .Permalink | safeURL }}" />
+
+{{ partial "head/opengraph.html" . }}
