@@ -1,7 +1,7 @@
 ---
 title: Editorconfig 🐀
 date: "2022-08-22"
-draft: false
+draft: true
 tags:
   - seed
 ---
