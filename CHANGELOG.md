@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.2.3](https://github.com/daribock/garden/compare/v2.2.2...v2.2.3) (2024-04-17)
+
+
+### Bug Fixes
+
+* set delta to draft ([6d39646](https://github.com/daribock/garden/commit/6d3964670f6825a5a09518a0f1da85327e28a3e2))
+
 ## [2.2.2](https://github.com/daribock/garden/compare/v2.2.1...v2.2.2) (2024-04-17)
 
 
