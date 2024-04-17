@@ -1,5 +1,13 @@
 # Changelog
 
+## [2.2.2](https://github.com/daribock/garden/compare/v2.2.1...v2.2.2) (2024-04-17)
+
+
+### Bug Fixes
+
+* set fix import to draft ([d58d06b](https://github.com/daribock/garden/commit/d58d06bc75caf766aae34a4a31099ec9daa1114e))
+* set git hooks.md to draft ([17088ec](https://github.com/daribock/garden/commit/17088ec2b4773cb7fc28451b5030f93b6594da96))
+
 ## [2.2.1](https://github.com/daribock/garden/compare/v2.2.0...v2.2.1) (2024-02-15)
 
 
