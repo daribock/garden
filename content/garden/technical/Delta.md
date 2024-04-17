@@ -1,7 +1,7 @@
 ---
 title: Delta
 date: "2022-08-08"
-draft: false
+draft: true
 tags:
   - seed
 ---
